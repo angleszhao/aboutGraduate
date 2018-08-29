@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>行人轨迹生成</title>
+    <link rel="stylesheet" type="text/css" href="static/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/material.min.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/dataTables.material.min.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css"/>
+</head>
+<body>
+    <script src="static/js/bootstrap-table.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery-2.2.4.min.js"></script>
+    <script src="static/js/jquery.dataTables.min.js"></script>
+    <script src="static/js/dataTables.material.min.js"></script>
+    <script>
+        
+    </script>
+    <div id="container">
+        <ul id="nav">
+            <li><a href="./position">行人定位</a></li>
+            <li><a href="./reid">行人重识别</a></li>
+            <li><a href="./trace" style="background:#0095BB;">行人轨迹生成</a></li>
+            {% if name %}
+                <li>Hello {{ name }}! <a href="logout">退出</a></li>
+            {% else %}
+                <li>Hello World!</li>
+            {% endif %}
+        </ul>
+        <div id="content">
+<!--            <form class="retry_form" action="" method="post">
+                <button class='qq_button blue big' name="submit" type="submit" id="contact-submit" data-submit="...Sending">轨迹生成</button>
+                <button class='qq_button blue big' name="submit" type="submit" id="contact-submit" data-submit="...Sending">结果展示</button>
+                
+            </form>-->
+                <a href="./traceaction" target="_blank"><button class='qq_button blue big'  id="contact-submit" data-submit="...Sending">轨迹生成</button></a>
+                <a href="./traceresult" target="_blank"><button class='qq_button blue big'  id="contact-submit" data-submit="...Sending">结果展示</button></a>
+	<hr style="height:10px;border:none;border-top:10px groove skyblue;" />
+        </div>
+	{% if image %}
+	<div>
+		<img src="{{ image }}" width=50% height=50%/>
+	</div>
+	{% else %}
+	<div>
+		<img src="static/images/trace.png" width=50% height=50%/>
+	</div>
+	{% endif %}
+        <div class="clear"></div>
+    </div>
+</body>
+</html>

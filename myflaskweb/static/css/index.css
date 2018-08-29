@@ -1,0 +1,240 @@
+#container{
+    padding-top:10px;
+    width:90%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    border-left:1px solid;
+    border-right:1px solid;
+    box-shadow: 3px 3px 2px #888888;
+    font-family:'Microsoft yahei',Arial, Helvetica, sans-serif;
+    padding-bottom:15px;
+}
+
+#stats{
+    width:70%;
+    margin:0 auto;
+}
+
+ul#nav{ width:100%;
+        height:60px;
+        background:#00A2CA;
+        margin:0 auto}
+ul#nav li{
+        display:inline;
+        height:60px}
+ul#nav li a{
+        display:inline-block;
+        padding:0 20px;
+        height:60px;
+        line-height:60px;
+        color:#FFF;
+        font-family:"\5FAE\8F6F\96C5\9ED1";
+        font-size:16px}
+ul#nav li a:hover{
+        background:#0095BB}/*设置鼠标滑过或悬停时变化的背景颜色*/
+
+.clear{
+    text-align:center;
+    clear:both;
+}
+
+.retry_form {
+    width:70%;
+    margin:0 auto;
+    text-align: center;
+    padding-bottom:10px;
+}
+
+#tooltip{
+    width:40%;
+    float:left;
+    margin-top:25px;
+    padding:15px 20px;
+    border:1px dashed;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius:15px;
+    box-shadow:0 0 5px 0 #555;
+}
+
+input.qq_input {
+    width:300px;
+    height:40px;
+    display:block;
+    text-align:center;
+    margin:10px auto;
+    border-radius:5px;
+}
+
+select.qq_select {
+    width:100px;
+    height:40px;
+}
+
+#tipbox{
+    width:80%;
+    margin:0 auto;
+    padding:10px 10px;
+    margin-bottom:15px;
+}
+
+img{
+    display:block;
+    margin:15px auto;
+    -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
+.qq_button {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+
+    text-shadow: 1px 1px 1px rgba(255,255,255, .22);
+
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    -ms-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+}
+
+/* Green Color */
+
+.green {
+    color: #3e5706;
+
+    background: #a5cd4e; /* Old browsers */
+    background: -moz-linear-gradient(top,  #a5cd4e 0%, #6b8f1a 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5cd4e), color-stop(100%,#6b8f1a)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%); /* IE10+ */
+    background: linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%); /* W3C */
+}
+
+/* Blue Color */
+
+.blue {
+    color: #19667d;
+
+    background: #70c9e3; /* Old browsers */
+    background: -moz-linear-gradient(top,  #70c9e3 0%, #39a0be 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#70c9e3), color-stop(100%,#39a0be)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #70c9e3 0%,#39a0be 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #70c9e3 0%,#39a0be 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #70c9e3 0%,#39a0be 100%); /* IE10+ */
+    background: linear-gradient(top,  #70c9e3 0%,#39a0be 100%); /* W3C */
+}
+
+/* Gray Color */
+
+.gray {
+    color: #515151;
+
+    background: #d3d3d3; /* Old browsers */
+    background: -moz-linear-gradient(top,  #d3d3d3 0%, #8a8a8a 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d3d3d3), color-stop(100%,#8a8a8a)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #d3d3d3 0%,#8a8a8a 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #d3d3d3 0%,#8a8a8a 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #d3d3d3 0%,#8a8a8a 100%); /* IE10+ */
+    background: linear-gradient(top,  #d3d3d3 0%,#8a8a8a 100%); /* W3C */
+}
+
+/* Big Button Style */
+
+.big {
+    padding: 0 20px;
+    /* padding-top: 10px; */
+    height: 45px;
+    text-transform: uppercase;
+    font: bold 20px/22px Arial, sans-serif;
+}
+
+.big span {
+    display: block;
+    text-transform: none;
+    font: italic normal 12px/18px Georgia, sans-serif;
+    text-shadow: 1px 1px 1px rgba(255,255,255, .12);
+}
+
+#login{
+    margin-top:15px;
+}
+
+#left{
+    width:42%;
+    height:auto;
+    margin-left:55px;
+    float:left;
+}
+
+#right{
+    width:42%;
+    height:auto;
+    float:left;
+    margin-left:70px;
+}
+
+select.qq_select
+{
+   width                    : 160px;
+   height                   : 43px;
+   padding                  : 0.2em 0.4em 0.2em 0.4em;
+   vertical-align           : middle;
+   border                   : 1px solid #e9e9e9;
+   -moz-border-radius       : 0.2em;
+   -webkit-border-radius    : 0.2em;
+   border-radius            : 0.2em;
+   box-shadow               : inset 0 0 3px #a0a0a0;
+   -webkit-appearance       : none;
+   -moz-appearance          : none;
+   appearance               : none;
+   /* sample image from the webinfocentral.com */
+   font-size                : 1.1em;
+   color                    : #000099;
+   cursor                   : pointer;
+}
+select.qq_select  option
+{
+    font-size               : 1em;
+    padding                 : 0.2em 0.4em 0.2em 0.4em;
+}
+select.qq_select  option[selected]{ font-weight:bold}
+select.qq_select  option:nth-child(even) { background-color:#f5f5f5; }
+select.qq_select:hover
+{
+    color                   : #101010;
+    border                  : 1px solid #cdcdcd;
+}
+select.qq_select:focus {box-shadow: 0 0 2px 1px #404040;}
+
+#qq_manager{
+    width:80%;
+    margin:0 auto;
+    text-align:center;
+    padding:10px 0;
+}
+
+#history{
+    width:80%;
+    margin:0 auto;
+    padding:12px 0;
+}

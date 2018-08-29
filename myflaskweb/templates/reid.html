@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>行人重识别</title>
+    <link rel="stylesheet" type="text/css" href="static/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/material.min.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/dataTables.material.min.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css"/>
+</head>
+<body>
+    <script src="static/js/bootstrap-table.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery-2.2.4.min.js"></script>
+    <script src="static/js/jquery.dataTables.min.js"></script>
+    <script src="static/js/dataTables.material.min.js"></script>
+    <script>
+        
+    </script>
+    <div id="container">
+        <ul id="nav">
+            <li><a href="./position">行人定位</a></li>
+            <li><a href="./reid" style="background:#0095BB;">行人重识别</a></li>
+            <li><a href="./trace">行人轨迹生成</a></li>
+            {% if name %}
+                <li>Hello {{ name }}! <a href="logout">退出</a></li>
+            {% else %}
+                <li>Hello World!</li>
+            {% endif %}
+        </ul>
+        <div id="content">
+<!--            <form class="retry_form" action="" method="post">
+                <button class='qq_button blue big' name="submit" type="submit" id="contact-submit" data-submit="...Sending">开启容器</button>
+                <button class='qq_button blue big' name="submit" type="submit" id="contact-submit" data-submit="...Sending">开始处理</button>
+                <button class='qq_button blue big' name="submit" type="submit" id="contact-submit" data-submit="...Sending">关闭容器</button>
+            </form>-->
+               <a href="./startreid"><button class='qq_button blue big'  id="contact-submit" data-submit="...Sending">开启容器</button></a>
+               <a href="./reidaction"><button class='qq_button blue big'  id="contact-submit" data-submit="...Sending" onclick="alert('将在容器内进行处理')">开始处理</button></a>
+               <a href="./stopreid"><button class='qq_button blue big'  id="contact-submit" data-submit="...Sending">关闭容器</button></a>
+        </div>
+	<hr style="height:10px;border:none;border-top:10px groove skyblue;" />
+        {% if isok %}
+        <h3 style="text-align:center;">处理完毕</h3>
+        <hr style="height:10px;border:none;border-top:10px groove skyblue;" />
+        {% endif %} 
+	<div>
+                <img src="static/images/reid.png" width=50% height=50%/>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+</body>
+</html>
